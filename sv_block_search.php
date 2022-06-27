@@ -18,6 +18,12 @@
 		}
 
 		protected function load_settings(): sv_block_search {
+			// Wrapper
+			$this->get_setting( 'background_color' )
+			     ->set_title( __( 'Background Color', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'color' );
+
 			$this->get_setting( 'margin' )
 				->set_title( __( 'Margin', 'sv100' ) )
 				->set_is_responsive(true)
@@ -38,6 +44,96 @@
 				->set_title( __( 'Border', 'sv100' ) )
 				->set_is_responsive(true)
 				->load_type( 'border' );
+
+			// Input
+			$this->get_setting( 'input_font' )
+			     ->set_title( __( 'Font Family', 'sv100' ) )
+			     ->set_description( __( 'Choose a font for your text.', 'sv100' ) )
+			     ->set_options( $this->get_module( 'sv_webfontloader' ) ? $this->get_module( 'sv_webfontloader' )->get_font_options() : array('' => __('Please activate module SV Webfontloader for this Feature.', 'sv100')) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'select' );
+
+			$this->get_setting( 'input_font_size' )
+			     ->set_title( __( 'Font Size', 'sv100' ) )
+			     ->set_description( __( 'Font Size in pixel.', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'number' );
+
+			$this->get_setting( 'input_line_height' )
+			     ->set_title( __( 'Line Height', 'sv100' ) )
+			     ->set_description( __( 'Set line height as multiplier or with a unit.', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'text' );
+
+			$this->get_setting( 'input_text_color' )
+			     ->set_title( __( 'Text Color', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'color' );
+
+			$this->get_setting( 'input_background_color' )
+			     ->set_title( __( 'Background Color', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'color' );
+
+			$this->get_setting( 'input_margin' )
+			     ->set_title( __( 'Margin', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'margin' );
+
+			$this->get_setting( 'input_padding' )
+			     ->set_title( __( 'Padding', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'margin' );
+
+			$this->get_setting( 'input_border' )
+			     ->set_title( __( 'Border', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'border' );
+
+			// Submit
+			$this->get_setting( 'submit_font' )
+			     ->set_title( __( 'Font Family', 'sv100' ) )
+			     ->set_description( __( 'Choose a font for your text.', 'sv100' ) )
+			     ->set_options( $this->get_module( 'sv_webfontloader' ) ? $this->get_module( 'sv_webfontloader' )->get_font_options() : array('' => __('Please activate module SV Webfontloader for this Feature.', 'sv100')) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'select' );
+
+			$this->get_setting( 'submit_font_size' )
+			     ->set_title( __( 'Font Size', 'sv100' ) )
+			     ->set_description( __( 'Font Size in pixel.', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'number' );
+
+			$this->get_setting( 'submit_line_height' )
+			     ->set_title( __( 'Line Height', 'sv100' ) )
+			     ->set_description( __( 'Set line height as multiplier or with a unit.', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'text' );
+
+			$this->get_setting( 'submit_text_color' )
+			     ->set_title( __( 'Text Color', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'color' );
+
+			$this->get_setting( 'submit_background_color' )
+			     ->set_title( __( 'Background Color', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'color' );
+
+			$this->get_setting( 'submit_margin' )
+			     ->set_title( __( 'Margin', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'margin' );
+
+			$this->get_setting( 'submit_padding' )
+			     ->set_title( __( 'Padding', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'margin' );
+
+			$this->get_setting( 'submit_border' )
+			     ->set_title( __( 'Border', 'sv100' ) )
+			     ->set_is_responsive(true)
+			     ->load_type( 'border' );
 
 			return $this;
 		}
