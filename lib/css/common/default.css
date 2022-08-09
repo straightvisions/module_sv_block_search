@@ -1,5 +1,4 @@
 .wp-block-search .wp-block-search__button {
-	margin-left: 0.625em;
 	word-break: normal;
 }
 .wp-block-search .wp-block-search__button.has-icon {
@@ -22,9 +21,6 @@
 .wp-block-search.wp-block-search__button-only .wp-block-search__button {
 	margin-left: 0;
 }
-.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
-	padding: 4px;
-}
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input {
 	border-radius: 0;
 	border: none;
@@ -32,9 +28,6 @@
 }
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input:focus {
 	outline: none;
-}
-.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button {
-	padding: 0.125em 0.5em;
 }
 .wp-block-search.aligncenter .wp-block-search__inside-wrapper {
 	margin: auto;
