@@ -1,5 +1,6 @@
 .wp-block-search{
 	max-width:100% !important;
+	width:100%;
 }
 .wp-block-search__button{
 	cursor:pointer;
