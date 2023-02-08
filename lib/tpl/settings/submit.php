@@ -20,10 +20,5 @@
 				echo $module->get_setting( 'submit_padding' )->form();
 			?>
 		</div>
-		<div class="sv_setting_flex">
-			<?php
-				echo $module->get_setting( 'submit_border' )->form();
-			?>
-		</div>
 	</div>
 <?php } ?>

@@ -40,11 +40,6 @@
 				->set_is_responsive(true)
 				->load_type( 'margin' );
 
-			$this->get_setting( 'border' )
-				->set_title( __( 'Border', 'sv100' ) )
-				->set_is_responsive(true)
-				->load_type( 'border' );
-
 			// Input
 			$this->get_setting( 'input_font' )
 			     ->set_title( __( 'Font Family', 'sv100' ) )
@@ -85,11 +80,6 @@
 			     ->set_is_responsive(true)
 			     ->load_type( 'margin' );
 
-			$this->get_setting( 'input_border' )
-			     ->set_title( __( 'Border', 'sv100' ) )
-			     ->set_is_responsive(true)
-			     ->load_type( 'border' );
-
 			// Submit
 			$this->get_setting( 'submit_font' )
 			     ->set_title( __( 'Font Family', 'sv100' ) )
@@ -129,11 +119,6 @@
 			     ->set_title( __( 'Padding', 'sv100' ) )
 			     ->set_is_responsive(true)
 			     ->load_type( 'margin' );
-
-			$this->get_setting( 'submit_border' )
-			     ->set_title( __( 'Border', 'sv100' ) )
-			     ->set_is_responsive(true)
-			     ->load_type( 'border' );
 
 			return $this;
 		}

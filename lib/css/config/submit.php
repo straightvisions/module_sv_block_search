@@ -8,7 +8,6 @@
 			$module->get_setting('submit_text_color')->get_css_data(),
 			$module->get_setting('submit_background_color')->get_css_data('background-color'),
 			$module->get_setting('submit_padding')->get_css_data('padding'),
-			$module->get_setting('submit_margin')->get_css_data(),
-			$module->get_setting('submit_border')->get_css_data()
+			$module->get_setting('submit_margin')->get_css_data()
 		)
 	);

@@ -8,7 +8,6 @@
 			$module->get_setting('input_text_color')->get_css_data(),
 			$module->get_setting('input_background_color')->get_css_data('background-color'),
 			$module->get_setting('input_padding')->get_css_data('padding'),
-			$module->get_setting('input_margin')->get_css_data(),
-			$module->get_setting('input_border')->get_css_data()
+			$module->get_setting('input_margin')->get_css_data()
 		)
 	);
